@@ -16,10 +16,11 @@ const cursos = {
     ],
     academicos: [
         'Validación por Ciclos (Primaria y Bachillerato)',
-        'Conocimientos Académicos en Inglés - Nivel A1',
-        'Conocimientos Académicos en Inglés - Nivel A2',
-        'Conocimientos Académicos en Inglés - Nivel B1',
-        'Conocimientos Académicos en Inglés - Nivel B2'
+        '🎨 INGLÉS PARA NIÑOS (EDADES ENTRE 4 A 6):(ENGLISH GARDEN)  🌼'
+        'CONOCIMIENTOS ACADÉMICOS EN INGLÉS (A1, A2, B1, B2)',
+        'INGLÉS PARA NIÑOS (EDADES ENTRE 7 A 9 AÑOS)',
+        'INGLÉS PARA NIÑOS (EDADES ENTRE 10-12 AÑOS): FLYERS - FLYERS PLUS',
+        '📘 INGLÉS PARA ADOLESCENTES (13 A 15 AÑOS)'
     ],
     cortos: [
         'Curso de Vigilancia Privada',
