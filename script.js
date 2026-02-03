@@ -34,7 +34,10 @@ const cursos = {
         'Curso de Emprendimiento',
         'Curso de Manipulación de Alimentos',
         'Curso de Seguridad Industrial',
-        'Curso de Belleza / Estética'
+        'Curso de Belleza / Estética',
+        'CURSO DE MONTACARGAS',
+        'RENOVACIÓN DE MONTACARGAS',
+        'CURSO DE CARGADOR FRONTAL'
     ]
 };
 
