@@ -19,7 +19,7 @@ body {
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    max-width: 600px;
+    max-width: 1200px;
     width: 100%;
 }
 
@@ -30,8 +30,24 @@ h2 {
     font-size: 28px;
 }
 
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.message-column {
+    display: flex;
+    flex-direction: column;
+}
+
 .filter-section {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding: 20px;
     background: #f8f9fa;
     border-radius: 10px;
@@ -161,10 +177,10 @@ textarea {
     border: 2px solid #ddd;
     border-radius: 10px;
     resize: vertical;
-    min-height: 300px;
+    flex-grow: 1;
+    min-height: 400px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    margin-top: 10px;
     color: #333;
 }
 
@@ -172,25 +188,6 @@ textarea:focus {
     outline: none;
     border-color: #667eea;
     box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-}
-
-.mensaje-section {
-    margin-top: 30px;
-    display: none;
-}
-
-.mensaje-section.active {
-    display: block;
-}
-
-.alerta {
-    padding: 15px;
-    background: #fff3cd;
-    border: 1px solid #ffc107;
-    border-radius: 10px;
-    color: #856404;
-    margin-top: 10px;
-    text-align: center;
 }
 
 .exito {
@@ -203,7 +200,11 @@ textarea:focus {
     text-align: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+    
     .container {
         padding: 25px;
     }
@@ -211,4 +212,15 @@ textarea:focus {
     h2 {
         font-size: 24px;
     }
+    
+    textarea {
+        min-height: 300px;
+    }
+}
+
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
 }
