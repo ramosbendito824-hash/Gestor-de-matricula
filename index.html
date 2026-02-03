@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de Cursos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>🎓 Selecciona tu Programa</h2>
+        
+        <div class="filter-section">
+            <div class="filter-title">Filtrar por categoría:</div>
+            <div class="checkbox-group">
+                <div class="checkbox-item">
+                    <input type="checkbox" id="tecnicos" value="tecnicos">
+                    <label for="tecnicos">🎓 Programas Técnicos Laborales</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="academicos" value="academicos">
+                    <label for="academicos">📘 Programas Académicos</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="cortos" value="cortos">
+                    <label for="cortos">⏱️ Cursos Cortos</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="select-section">
+            <label for="cursos">Selecciona un programa:</label>
+            <select id="cursos">
+                <option value="">-- Selecciona una categoría --</option>
+            </select>
+        </div>
+
+        <div class="select-section">
+            <label for="horarios">⏰ Selecciona un horario:</label>
+            <select id="horarios">
+                <option value="">-- Selecciona un horario --</option>
+                <option value="LUNES A VIERNES - 7:00 am a 12:00 m">⏰ LUNES A VIERNES - 7:00 am a 12:00 m</option>
+                <option value="LUNES A VIERNES - 8:30 am a 11:30 am">⏰ LUNES A VIERNES - 8:30 am a 11:30 am</option>
+                <option value="LUNES A VIERNES - 10:15 am a 12:45 m">⏰ LUNES A VIERNES - 10:15 am a 12:45 m</option>
+                <option value="LUNES A VIERNES - 1:30 pm a 4:00 pm">⏰ LUNES A VIERNES - 1:30 pm a 4:00 pm</option>
+                <option value="LUNES A JUEVES - 7:00 am a 9:30 am">⏰ LUNES A JUEVES - 7:00 am a 9:30 am</option>
+                <option value="LUNES A JUEVES - 10:15 am a 12:45 m">⏰ LUNES A JUEVES - 10:15 am a 12:45 m</option>
+                <option value="LUNES A JUEVES - 1:30 pm a 4:00 pm">⏰ LUNES A JUEVES - 1:30 pm a 4:00 pm</option>
+                <option value="VIERNES - 7:00 am a 12:00 m">⏰ VIERNES - 7:00 am a 12:00 m</option>
+                <option value="VIERNES - 1:00 pm a 6:00 pm">⏰ VIERNES - 1:00 pm a 6:00 pm</option>
+                <option value="SÁBADOS - 7:00 am a 12:00 m">⏰ SÁBADOS - 7:00 am a 12:00 m</option>
+                <option value="SÁBADOS - 1:00 pm a 6:00 pm">⏰ SÁBADOS - 1:00 pm a 6:00 pm</option>
+                <option value="SÁBADOS - 2:00 pm a 6:00 pm">⏰ SÁBADOS - 2:00 pm a 6:00 pm</option>
+                <option value="DOMINGOS - 8:00 am a 12:00 m">⏰ DOMINGOS - 8:00 am a 12:00 m</option>
+            </select>
+        </div>
+
+        <div class="select-section">
+            <label for="fechaInicio">📅 Fecha de inicio:</label>
+            <input type="text" id="fechaInicio" placeholder="Fecha de inicio (Ej: 8 de febrero)">
+        </div>
+
+        <button class="btn btn-primary" id="btnGenerar">✨ Generar Mensaje</button>
+
+        <div class="mensaje-section" id="mensajeSection">
+            <label>📄 Mensaje de matrícula:</label>
+            <textarea id="mensajeTexto" readonly></textarea>
+            <button class="btn btn-secondary" id="btnCopiar">📋 Copiar Mensaje</button>
+            <div id="alertaCopia" style="display: none;"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
