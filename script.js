@@ -103,14 +103,19 @@ btnGenerar.addEventListener('click', function() {
         return;
     }
     if (!fechaInicio) {
-        alert('⚠️ Por favor ingresa la fecha de inicio');
+        alert('⚠️ Por favor selecciona la fecha de inicio');
         return;
     }
+
+    // Formatear la fecha a español
+    const fecha = new Date(fechaInicio + 'T00:00:00');
+    const opciones = { day: 'numeric', month: 'long', year: 'numeric' };
+    const fechaFormateada = fecha.toLocaleDateString('es-ES', opciones);
 
     // Generar el mensaje
     const mensaje = `Tu matrícula fue procesada con éxito en el programa: ${cursoSeleccionado.toUpperCase()}
 En el horario ⏰: ${horarioSeleccionado}
-Su fecha de inicio programada es para el próximo: ${fechaInicio}
+Su fecha de inicio programada es para el próximo: ${fechaFormateada}
 
 Debe acercarse al momento de iniciar sus clases al área de recepción para que le sea tomada la foto del carnet y seguro estudiantil.
 
